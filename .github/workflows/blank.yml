@@ -10,7 +10,7 @@ on:
       IMG_URL:
         description: 'IMG_URL'
         required: true
-        default: 'https://github.com/momo54181/action_build_twrp_device_tree/raw/main/recovery.img'
+        default: 'https://github.com/2PuceWriter79890/action_build_twrp_device_tree/blob/main/recovery.img'
 
 jobs:
   build:
