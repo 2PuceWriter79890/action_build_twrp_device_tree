@@ -49,6 +49,13 @@ jobs:
     - name: ZIP device tree
       run: |
         zip -r DeviceTree.zip ./dt
+    
+    - name: Upload as Artifact
+      uses: actions/upload-artifact@v4.6.2
+      with:
+        name: TWRP_DeviceTree_${{ github.run_number }}
+        path: DeviceTree.zip
+        retention-days: 31
 
     - name: Upload to Release
       uses: softprops/action-gh-release@v1
